@@ -117,9 +117,8 @@ button {
 
 .login-input {
     display: inline-block;
-    width: 22rem;
+    width: 30rem;
     height: 100%;
-    padding-left: 1.5rem;
     font-size: 1.5rem;
     background: transparent;
     color: #FDFCFD;
@@ -234,7 +233,7 @@ button {
     padding-top: 25px;
     font-size: 1.3em;
     font-weight: bold;
-    font-family: "Roboto";
+    font-family: "Raleway";
 }
 
 .mainpage {
@@ -243,17 +242,17 @@ button {
     margin-left:15%;
 }
 
-.mentor-bio-container {
+.mentor-find-container {
     padding: 50px;
     height:100%;
 }
 
-.mentor-bio {
+.mentor-find {
     background-color: white;
     height: 100%;
 }
 
-.mentor-bio-header {
+.mentor-find-header {
     background-color: pink;
     padding: 25px 50px;
     font-size:3em;
