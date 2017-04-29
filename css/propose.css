@@ -94,6 +94,8 @@
     border: none;
     background: rgba(232, 187, 190, 1);
     color: white;
+    width: 120px;
+    border-radius: 0px;
 }
 
 .padding-vertical15 {

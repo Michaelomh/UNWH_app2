@@ -236,32 +236,71 @@ button {
     font-family: "Raleway";
 }
 
+.sidebar-tab:hover {
+    background: #e8bbbe;
+    transition: 1s;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
 .mainpage {
     height: 100vh;
     background-color: #f0f0f0;
     margin-left: 15%;
 }
 
-.mentor-find-container {
+.mentor-chat-container {
     padding: 50px;
     height: 100%;
 }
 
-.mentor-find {
+.mentor-chat {
     background-color: white;
     height: 100%;
 }
 
-.mentor-find-header {
-    background-color: pink;
+.mentor-chat-header {
+    background-color: #e8bbbe;
     padding: 25px 50px;
     font-size: 3em;
     font-family: "Roboto";
 }
 
+.mentor-chat-body {
+    background-color: #ffffff;
+    padding: 25px 50px;
+    font-family: "Roboto";
+    height: 70%;
+}
+
+.mentor-chat-box {
+    background-color: #e1e1e1;
+    padding: 25px 50px;
+    font-family: "Roboto";
+    height: 15%;
+}
+
 .mentor-search-container {
     padding: 50px;
     height: 100%;
+}
+
+.chat-left {
+    background: #ffffff;
+    border: 2px solid #f0f0f0;
+    height: 75px;
+    padding: 15px;
+    padding-left: 25px !important;
+    font-size: 2em;
+}
+
+.chat-right {
+    background: #f0f0f0;
+    height: 75px;
+    padding: 15px;
+    padding-right: 25px !important;
+    font-size: 2em;
+    text-align: right;
 }
 
 .mentor-search-bar {
@@ -374,7 +413,8 @@ button {
     bottom: 0;
     background: #FFFFFF;
     width: 100%;
-    padding: 0px 30px 25px;;
+    padding: 0px 30px 25px;
+    ;
     -webkti-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -432,4 +472,81 @@ button {
 .post-module .post-content .post-meta a {
     color: #999999;
     text-decoration: none;
+}
+
+.modal-header-title {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    font-size: 3em;
+    font-family: "Raleway";
+    color: white;
+    font-weight: bold
+}
+
+.modal-chat-button {
+    background-color: #e8bbbe;
+    position: relative;
+    top: -100px;
+    height: 70px;
+    font-size: 1.2em;
+    font-weight: bold;
+    left: 670px;
+}
+
+.modal-title {
+    font-size: 3em;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.modal-dsec {
+    font-size: 1.3em;
+    font-family: "Raleway";
+}
+
+.no-proj-page {
+    text-align: center;
+    padding-top: 23%;
+}
+
+.font-highlight {
+    text-decoration: underline;
+}
+
+#send-message-button {
+    float: left;
+    padding: 25px;
+    background-color: #e8bbbe;
+    height: 100%;
+    width: 20%;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+#send-message-button:hover {
+    background-color: #d19da0;
+    transition: 1s;
+}
+
+#propose-chat-button {
+    float: right;
+    height: 75px;
+    width: 18%;
+    font-size: 0.6em;
+    text-align: center;
+    background-color: white;
+}
+
+#propose-chat-button:hover {
+    background-color: #f0f0f0;
+    transition: 1s;
+}
+
+.font-highlight:hover {
+    transition: 1s;
+    color: #e8bbbe;
+    font-size: 1.05em;
+    cursor: pointer;
 }

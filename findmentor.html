@@ -24,8 +24,8 @@
             <span style="font-size:2em; color:white; font-weight:bold; font-family: Roboto;">Rachael Lau</span>
         </div>
         <div class="sidebar-navigation">
-            <div class="sidebar-tab">Home Page</div>
-            <div class="sidebar-tab">Explore Projects</div>
+            <div class="sidebar-tab nav-project">My Project</div>
+            <div class="sidebar-tab nav-findmentors">Explore Mentors</div>
             <div class="sidebar-tab">My Profile</div>
         </div>
         <div class="sidebar-bottom">
@@ -160,23 +160,25 @@
         </div>
     </div>
 
-    <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog" style="width: 70vw;height:80vh;margin-top:5%">
 
-            <!-- Modal content-->
             <div class="modal-content" style="border-radius:0px;height:100%;">
-                <div class="modal-header" style="border-bottom:0px;">
-                    <img src="img/bg1.jpg" class="img-responsive" style=" position: relative; left: -15px; top: -15px;"/>
-                    <span>Michael Ong</span>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <button class="mui-btn" style="background-color:#e8bbbe">
-                <i class="fa fa-2x fa-comments" aria-hidden="true"></i>&nbsp;
-                Chat with me!
-            </button>
+                <div class="modal-header" style="border-bottom:0px;padding:0px;">
+                    <img src="img/bg1.jpg" class="img-responsive" style="height: 30vh;width: 100%;" />
+                    <span class="modal-header-title">Michael Ong</span>
+                    <button class="modal-chat-button">
+                        <i class="fa fa-2x fa-comments" aria-hidden="true"></i>&nbsp;
+                        Chat with me!
+                    </button>
                 </div>
                 <div class="modal-body">
-
+                    <span class="modal-title">About Me</span>
+                    <span class="modal-desc"></span><br>
+                    <span class="modal-title">My Passions</span>
+                    <span class="modal-desc"></span><br>
+                    <span class="modal-title">What i can offer</span>
+                    <span class="modal-desc"></span><br>
                 </div>
             </div>
 
