@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
 </head>
 
 <body>
@@ -26,26 +29,157 @@
             <div class="sidebar-tab">My Profile</div>
         </div>
         <div class="sidebar-bottom">
-            <div class="mui-col-md-4">
+            <div class="col-md-4">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
             </div>
-            
-            <div class="mui-col-md-4">
+
+            <div class="col-md-4">
                 <i class="fa fa-gear" aria-hidden="true"></i>
             </div>
-            <div class="mui-col-md-4">
+            <div class="col-md-4">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
             </div>
         </div>
     </div>
     <div class="mainpage" style="height:100vh;">
-        <div class="mentor-find-container">
-            <div class="mentor-find">
-                <div class="mentor-find-header">
-                    Search
-                </div>
-                <div class="mentor-find-body"></div>
+        <div class="mentor-search-container">
+            <div class="mentor-search-bar">
+                <input type="text" class="form-control" placeholder="Search" style="height: 100%; width: 100%; font-size: 4rem; padding: 20px;" />
             </div>
+            <div class="mentor-search-icons-bar">
+                <div class="col-xs-2 mentor-search-icons">
+                    <img src="img/1.png" style="height:100%;width:100%;cursor:pointer;" />
+                </div>
+                <div class="col-xs-2 mentor-search-icons">
+                    <img src="img/2.png" style="height:100%;width:100%;cursor:pointer;" />
+                </div>
+                <div class="col-xs-2 mentor-search-icons">
+                    <img src="img/3.png" style="height:100%;width:100%;cursor:pointer;" />
+                </div>
+                <div class="col-xs-2 mentor-search-icons">
+                    <img src="img/4.png" style="height:100%;width:100%;cursor:pointer;" />
+                </div>
+                <div class="col-xs-4 mentor-search-icons" style="height:57px;">&nbsp;
+                </div>
+            </div><br>
+            <div class="mentor-search-cards">
+                <div class="row" style="height: 385px;">
+                    <div class="col-md-4" id="card-1">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong Ming Hao</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="column">
+                            <div class="post-module">
+                                <div class="thumbnail">
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <div class="category">Michael Ong</div>
+                                    <h1 class="title">CEO, AngelBake</h1>
+                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog" style="width: 70vw;height:80vh;margin-top:5%">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="border-radius:0px;height:100%;">
+                <div class="modal-header" style="border-bottom:0px;">
+                    <img src="img/bg1.jpg" class="img-responsive" style=" position: relative; left: -15px; top: -15px;"/>
+                    <span>Michael Ong</span>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button class="mui-btn" style="background-color:#e8bbbe">
+                <i class="fa fa-2x fa-comments" aria-hidden="true"></i>&nbsp;
+                Chat with me!
+            </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
