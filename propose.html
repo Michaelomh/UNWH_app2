@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/propose.css">
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -44,7 +42,7 @@
     </div>
     <div class="mainpage" style="height:100vh;">
         <div class="container-fluid side-margins padding-top">
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-md-12 pink-bg padding20">
                     <div class="row-fluid">
                         <div class="col-md-3">
@@ -59,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-md-12 white-bg">
                     <ul id="sortable" class="list-unstyled">
                         <li class="ui-state-default">
@@ -107,12 +105,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="row white-bg padding-vertical15">
-                <div class="col-md-6 col-md-offset-6">
-                    <button type="button" class="propose-btn btn btn-lg pull-right">Cancel</button>
-                    <button type="button" class="propose-btn btn btn-lg pull-right">Accept</button>
-                    <button type="button" class="propose-btn btn btn-lg pull-right">Reject</button>
+            <div class="row-fluid white-bg padding-vertical15">
+                <div class="col-md-12 white-bg" style="">
+                    <div class="row-fluid">
+                        <div class="col-md-12 padding-vertical15" style="background: white;">
+                            <button type="button" class="propose-btn btn btn-lg pull-right">Cancel</button>
+                            <button type="button" class="propose-btn btn btn-lg pull-right">Accept</button>
+                            <button type="button" class="propose-btn btn btn-lg pull-right">Reject</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
             </div>
         </div>
     </div>
