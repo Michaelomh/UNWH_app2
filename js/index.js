@@ -1,3 +1,5 @@
+var counter = 0;
+
 $(document).ready(function () {
     console.log("ready up");
     setTimeout(setupTimeOut, 1000);
@@ -11,7 +13,7 @@ function setupTimeOut() {
     $("#card-1").click(function () {
         $('#myModal').modal('toggle');
     });
-    
+
     $("#propose-chat-button").click(function () {
         $('#proposeModal').modal('toggle');
     });
@@ -21,7 +23,7 @@ function setupTimeOut() {
 
         setTimeout(loginSlideUp, 2000);
     });
-    
+
     $(".nav-newproject").click(function () {
         console.log("go to new project");
     });
@@ -34,10 +36,61 @@ function setupTimeOut() {
         window.location.href = 'findmentor.html';
     });
 
+    $(".modal-chat-button").click(function () {
+        $('#myModal').modal('toggle');
+        setTimeout(moveToChat, 500);
+    });
+
+    $("#e-comm-filter").click(function () {
+        $("#find-mentor-bottom").animate({
+            opacity: "hide"
+        }, 500, function () {
+            duration: "slow"
+        });
+        $("#find-mentor-disappear").animate({
+            opacity: "hide"
+        }, 500, function () {
+            duration: "slow"
+        });
+    });
+
+    $("#send-message-button").click(function () {
+        if (counter == 0) {
+            $("#send1").animate({
+                opacity: "show"
+            }, 500, function () {
+                duration: "slow"
+            });
+            setTimeout(responseMsg1, 4000);
+            counter++;
+        } else {
+            $("#send2").animate({
+                opacity: "show"
+            }, 500, function () {
+                duration: "slow"
+            });
+            setTimeout(responseMsg2, 4000);
+        }
+    });
+
 }
 
-$("#send-message-button").click(function() {
-    console.log("send message");
-});
-
+var moveToChat = function () {
+    window.location.href = 'chatmentor.html';
+};
     
+var responseMsg1 = function () {
+    $("#response1").animate({
+        opacity: "show"
+    }, 500, function () {
+        duration: "slow"
+    });
+};
+
+var responseMsg2 = function () {
+    $("#response2").animate({
+        opacity: "show"
+    }, 500, function () {
+        duration: "slow"
+    });
+};

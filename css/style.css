@@ -66,12 +66,16 @@ button {
 .login {
     position: relative;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(155, 155, 155, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%);
     transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
     transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
     transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25), -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+.login-input::-webkit-input-placeholder {
+    color: #ABA8AE;
 }
 
 .login.inactive {
@@ -280,6 +284,13 @@ button {
     height: 15%;
 }
 
+.mentor-chat-box > .form-control {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .mentor-search-container {
     padding: 50px;
     height: 100%;
@@ -326,6 +337,7 @@ button {
 .mentor-search-cards {
     margin-top: 60px;
     margin-bottom: 50px;
+    transition: 1s;
 }
 
 .post-module {
@@ -488,10 +500,17 @@ button {
     background-color: #e8bbbe;
     position: relative;
     top: -100px;
-    height: 70px;
-    font-size: 1.2em;
+    left: 770px;
+    height: 60px;
+    font-size: 1.5em;
     font-weight: bold;
-    left: 670px;
+    width: 220px;
+    font-family: "Raleway";
+}
+
+.modal-chat-button:hover {
+    background-color: #ffffff;
+    transition: 1s;
 }
 
 .modal-title {
@@ -500,8 +519,8 @@ button {
     font-weight: bold;
 }
 
-.modal-dsec {
-    font-size: 1.3em;
+.modal-desc {
+    font-size: 1.5em;
     font-family: "Raleway";
 }
 
