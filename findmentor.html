@@ -15,6 +15,8 @@
     <script src="js/index.js"></script>
     <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
     <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <script src="css/toastr.min.js"></script>
+    <link rel="stylesheet" href="css/toastr.min.css">
 </head>
 
 <body>
@@ -24,19 +26,20 @@
             <span style="font-size:2em; color:white; font-weight:bold; font-family: Roboto;">Rachael Lau</span>
         </div>
         <div class="sidebar-navigation">
-            <div class="sidebar-tab nav-project">My Project</div>
+            <div class="sidebar-tab nav-error">My Project</div>
             <div class="sidebar-tab nav-findmentors">Explore Mentors</div>
-            <div class="sidebar-tab">My Profile</div>
+            <div class="sidebar-tab nav-error">My Profile</div>
+            <div class="sidebar-tab nav-error">Chat</div>
         </div>
         <div class="sidebar-bottom">
-            <div class="col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-gear" aria-hidden="true"></i>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
             </div>
         </div>
@@ -68,12 +71,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men5.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Violet Tan</div>
+                                    <h1 class="title">CEO, Love Burrito</h1>
+                                    <p class="description">Love Burrito started out as a passion project in 2006. But soon it became my full time job, providing quality products to females in southeast asia ...</p>
                                 </div>
                             </div>
                         </div>
@@ -83,12 +86,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men4.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong Ming Hao</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Jane Teo</div>
+                                    <h1 class="title">Founder, thirteen Cupcakes</h1>
+                                    <p class="description">The founder of thirteen cupcakes, I am an expert in marketing and branding strategies for you. If you need marketing advice you can always approach me at ...</p>
                                 </div>
                             </div>
                         </div>
@@ -98,12 +101,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men6.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Sheryl Cheong</div>
+                                    <h1 class="title">Business Strategy, Dressabelle</h1>
+                                    <p class="description">An expert in e-commerce, I have an expertise in providing supply chain management and operational functions. If you need someone to help you with e-commerce you ...</p>
                                 </div>
                             </div>
                         </div>
@@ -116,12 +119,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men2.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Gayle Hinders</div>
+                                    <h1 class="title">CEO, CareerCup</h1>
+                                    <p class="description">As an expert in programming, I can offer advice to startups on what to do technological-wise. I am hope i can inspire females to achieve their dreams and ...</p>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +133,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men1.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Athena Samuels</div>
+                                    <h1 class="title">CEO, The Athena Network</h1>
+                                    <p class="description">The Athena Network Singapore provides a platform for female executives and entrepreneurs to learn, grow and connect. I am interested in helping connecting ...</p>
                                 </div>
                             </div>
                         </div>
@@ -145,12 +148,12 @@
                         <div class="column">
                             <div class="post-module">
                                 <div class="thumbnail">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt="">
+                                    <img src="img/men3.png" alt="">
                                 </div>
                                 <div class="post-content">
-                                    <div class="category">Michael Ong</div>
-                                    <h1 class="title">CEO, AngelBake</h1>
-                                    <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                                    <div class="category">Dawn Skye</div>
+                                    <h1 class="title">Angel Investor, 37 Angels</h1>
+                                    <p class="description">Serial entrepreneur and angel investor with experience pre launch through IPO. As an active early stage investor, I am interested in... </p>
                                 </div>
                             </div>
                         </div>
@@ -165,20 +168,20 @@
 
             <div class="modal-content" style="border-radius:0px;height:100%;">
                 <div class="modal-header" style="border-bottom:0px;padding:0px;">
-                    <img src="img/bg1.jpg" class="img-responsive" style="height: 30vh;width: 100%;" />
-                    <span class="modal-header-title">Michael Ong</span>
+                    <img src="img/banner1.png" class="img-responsive" style="height: 30vh;width: 100%;" />
+                    <span class="modal-header-title">Violet Tan</span>
                     <button class="modal-chat-button">
                         <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;
                         Chat with me!
                     </button>
                 </div>
-                <div class="modal-body" style="height: 40vh;position: relative;top: -70px;padding: 25px;">
+                <div class="modal-body" style="height: 40vh;position: relative;top: -70px;padding:25px 75px 5px; ">
                     <span class="modal-title">About Me</span><br>
-                    <span class="modal-desc">Hello! I am the best person in the world</span><br><br>
+                    <span class="modal-desc">Hello! I am Violet Tan, the co-founder of Love Burrito. Love Burrito started out as a passion project in 2006. I didn't expect it to grow so fast! </span><br><br>
                     <span class="modal-title">My Passions</span><br>
-                    <span class="modal-desc">I love helping others succeed. As well as free food, i mean who doesn't like free food. </span><br><br>
+                    <span class="modal-desc">I love helping others succeed, and meeting new people. I believe that the way to succeed is to first dress like it.</span><br><br>
                     <span class="modal-title">What i can offer</span><br>
-                    <span class="modal-desc">I can give advice on starting e-commerce websites.</span><br>
+                    <span class="modal-desc">I can give advice on starting e-commerce websites, as well as marketing and branding strategies for your company. If needed, I can also provide funds in exchange for equity if I believe your idea will be a big one! </span><br>
                 </div>
             </div>
 

@@ -69,16 +69,88 @@ function setupTimeOut() {
             }, 500, function () {
                 duration: "slow"
             });
-            setTimeout(responseMsg2, 4000);
         }
+
+
     });
 
+    $(".nav-error").click(function () {
+        toastr.warning('Feature not yet implemented');
+    });
+
+    $(".propose-btn").click(function () {
+        $('#proposeModal').modal('toggle');
+        setTimeout(moveToMilestones, 500);
+    });
+
+    $("#mile-1").click(function () {
+        $(".formTeam").hide();
+        $(".pitch").show();
+        $(".funds").hide();
+        $(".opsExit").hide();
+
+        $("#completed-panel").animate({
+            opacity: "show"
+        }, 500, function () {
+            duration: "slow"
+        });
+    });
+
+    $("#mile-2").click(function () {
+        $(".formTeam").show();
+        $(".pitch").hide();
+        $(".funds").hide();
+        $(".opsExit").hide();
+
+        $("#completed-panel").animate({
+            opacity: "hide"
+        }, 500, function () {
+            duration: "slow"
+        });
+    });
+
+    $("#mile-3").click(function () {
+        $(".formTeam").hide();
+        $(".pitch").hide();
+        $(".funds").show();
+        $(".opsExit").hide();
+
+        $("#completed-panel").animate({
+            opacity: "hide"
+        }, 500, function () {
+            duration: "slow"
+        });
+    });
+
+    $("#mile-4").click(function () {
+        $(".formTeam").hide();
+        $(".pitch").hide();
+        $(".funds").hide();
+        $(".opsExit").show();
+
+        $("#completed-panel").animate({
+            opacity: "hide"
+        }, 500, function () {
+            duration: "slow"
+        });
+    });
+
+
+    $("#comment-pitch").click(function () {
+        $(".pitch-edit").toggle();
+        $(".pitch").toggle();
+        $("#pitch-edit-div").toggle();
+    });
 }
 
 var moveToChat = function () {
     window.location.href = 'chatmentor.html';
 };
-    
+
+var moveToMilestones = function () {
+    window.location.href = 'milestones.html';
+};
+
 var responseMsg1 = function () {
     $("#response1").animate({
         opacity: "show"

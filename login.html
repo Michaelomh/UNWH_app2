@@ -15,6 +15,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="css/toastr.min.js"></script>
+    <link rel="stylesheet" href="css/toastr.min.css">
+    
 </head>
 
 <body>
@@ -34,7 +37,7 @@
                     <button type="button" class="login-submit">
                         Sign In
                     </button>
-                    <p class="login-signup">Don't have an account? &nbsp;<a>Sign up</a></p>
+                    <p class="login-signup nav-error">Don't have an account? &nbsp;<a>Sign up</a></p>
                 </div>
             </div>
         </div>
@@ -42,22 +45,23 @@
     <div class="side-bar">
         <div class="sidebar-avatar">
             <img src="img/rach.png" class="img-responsive" style="padding:0px 25px;" />
-            <span style="font-size:2.2em; color:white; font-family: Raleway;">Rachael Lau</span>
+            <span style="font-size:2em; color:white; font-weight:bold; font-family: Roboto;">Rachael Lau</span>
         </div>
         <div class="sidebar-navigation">
-            <div class="sidebar-tab nav-project">My Project</div>
+            <div class="sidebar-tab nav-error">My Project</div>
             <div class="sidebar-tab nav-findmentors">Explore Mentors</div>
-            <div class="sidebar-tab">My Profile</div>
+            <div class="sidebar-tab nav-error">My Profile</div>
+            <div class="sidebar-tab nav-error">Chat</div>
         </div>
         <div class="sidebar-bottom">
-            <div class="mui-col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
             </div>
 
-            <div class="mui-col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-gear" aria-hidden="true"></i>
             </div>
-            <div class="mui-col-md-4">
+            <div class="col-md-4 nav-error">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
             </div>
         </div>
@@ -67,8 +71,8 @@
         <div class="mainpage" style="height:100vh;">
             <div class="no-proj-page">
                 <span style="font-size:3em;">Welcome to YouGo! <br>
-                    <span class="font-highlight nav-newproject">Start a project</span> then <span class="font-highlight nav-findmentors">find a mentor!</span><br><br>
-                    Refer to our <span class="font-highlight">FAQ</span> if you need help.</span>
+                    <span class="font-highlight nav-error">Start a project</span> then <span class="font-highlight nav-findmentors">find a mentor!</span><br><br>
+                    Refer to our <span class="font-highlight nav-error">FAQ</span> if you need help.</span>
             </div>
         </div>
     </div>
